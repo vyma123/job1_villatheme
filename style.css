@@ -1,0 +1,162 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.nav-toggle {
+    display: none;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #f1f1f1;
+    padding: 1.5rem 0 0 0;
+    width: 100%;
+}
+
+.header .header_content {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    width: 90vw;
+}
+
+.header .nav-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header .nav-links {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.header .nav-links li {
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.header .nav-links li a {
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #817e7e;
+    font-size: 13px;
+}
+
+.header .nav-links li .link {
+    padding-bottom: 2.5rem;
+    color: #444040;
+}
+
+.header .nav-links li a:hover {
+    text-decoration: underline 1.5px;
+    text-underline-offset: 5px;
+    color: red;
+    transition: 0.05s;
+}
+
+.header .nav-links li i {
+    font-size: 10px;
+}
+
+.header .cart-btn-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+}
+
+.header .cart-btn-wrapper span i {
+    color: #a9a5a5;
+    font-size: 1.5rem;
+}
+
+header ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 0 30px;
+}
+
+header ul li:last-child {
+    margin-right: 0;
+}
+
+header ul li a {
+    text-decoration: none;
+    color: #42424a;
+    padding: 40px 0;
+    display: inline-block;
+    transition: all ease 0.3s;
+    font-size: 18px;
+}
+
+header ul li a:hover {
+    color: #ff8a00;
+}
+
+header ul .sub-menu {
+    position: absolute;
+    top: 97px;
+    left: 0;
+    width: 200px;
+    background-color: #ffffff;
+    box-shadow: 0 20px 45px #00000020;
+    opacity: 0;
+    visibility: hidden;
+    z-index: -1;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+}
+
+header ul li:hover .sub-menu {
+    opacity: 1;
+    visibility: visible;
+    z-index: 99;
+}
+
+header ul .sub-menu li {
+    margin: 0;
+    width: 100%;
+}
+
+header ul .sub-menu li a {
+    padding: 15px 20px;
+    display: inline-block;
+    width: 100%;
+}
+
+.sub-menu .home{
+    padding: 15px 20px;
+}
+
+.sub-menu .home a{
+    padding: 0;
+    width: auto;
+}
+
+
+.sub-menu .home  {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
